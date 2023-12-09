@@ -1,0 +1,8 @@
+# Compiled binary
+*.exe
+
+# Go build output
+*.out
+
+# Ignore vendor directories
+vendor/
