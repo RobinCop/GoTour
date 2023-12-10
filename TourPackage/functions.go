@@ -14,3 +14,24 @@ func Split(sum int) (x, y int) {
 	y = sum - x
 	return
 }
+
+func Forloopstest(amountOfLoops *int) int {
+	sum := 0
+	for i := 0; i < *amountOfLoops; i++ {
+		sum += i
+	}
+	for sum < *amountOfLoops*10 {
+		sum += sum
+	}
+
+	return sum
+}
+
+func Sqrt(x float64) float64 {
+	var z float64 = 1
+	for i := 0; i < 10; i++ {
+		z -= (z*z - x) / (2 * z)
+		// fmt.Println(z)
+	}
+	return z
+}
