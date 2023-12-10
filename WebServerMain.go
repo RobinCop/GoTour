@@ -30,8 +30,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 }
 
-var x *int
-
 func main() {
 	http.HandleFunc("/", handler)
 	fmt.Println("Server is running on http://localhost:8080")
